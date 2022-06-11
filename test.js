@@ -1,14 +1,17 @@
-// for loop - skrócona wersja while loop - szybszy sposób warunków pętli
+for (i = 0; i < 10; i++) {
 
-var links = document.getElementsByTagName("a");
-// dodanie var z elementem do html dla przykładu
+if(i === 5 || i === 3){
 
-for (ja = 1; ja < links.length; ja++){
+    continue;
+}
+//nauka do czego służy continue (kontunuacja pętli po spełnieniu warunku)
+console.log(i);
 
-console.log("To jest link numer" + ja);
+if(i === 7){
 
-
-
+    break;
+}
+//nauka do czego służy break (złamanie pętli)
 }
 
-document.write("wszystkie link są zloopowane");
+console.log("Zrobiłem break z pętli");
