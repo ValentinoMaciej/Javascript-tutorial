@@ -1,6 +1,6 @@
-var myAge = 23;
+var myAge = 20;
 
-if (myAge < 18 || myAge > 30){
+if (myAge < 18 || myAge > 30 || myAge == 25){
 
 document.write("Nie możesz wejść")
 
