@@ -1,23 +1,18 @@
-var youLikeMeat = false
-var myNum = 7;
-if (myNum == 10){
+var myAge = 8;
 
-    document.write("myNum is equal than 10...");
+if (myAge > 30){
+    document.write("Jesteś po 30tce !");
 
-}
+} else if (myAge > 20){
 
-else{
- document.write("myNum is not equal than 10...")
+    document.write("Jesteś po 20tce !");
 
+} else if (myAge > 10){
 
-}
+    document.write("Jesteś po 10tce !");
 
-if(youLikeMeat){
+}    else{
 
-    document.write("Podaję menu mięsne...")
+        document.write("Nie masz minimum 10 lat");
 
-}
-
-else{
-    document.write("Podaję menu wegańskie...")
 }
