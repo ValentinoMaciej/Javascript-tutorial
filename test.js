@@ -1,10 +1,14 @@
 // for loop - skrócona wersja while loop - szybszy sposób warunków pętli
 
-for (age = 5; age < 10; age++){
+var links = document.getElementsByTagName("a");
+// dodanie var z elementem do html dla przykładu
 
-console.log("Twój wiek to mniej niż 10 lat");
+for (ja = 1; ja < links.length; ja++){
+
+console.log("To jest link numer" + ja);
+
 
 
 }
 
-document.write("Twój wiek to więcej niż 10 lat");
+document.write("wszystkie link są zloopowane");
