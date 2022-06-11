@@ -1,12 +1,8 @@
-// while loop - podczas gdy warunek jest spełniony (podobne do if)
-var age = 8;
+// for loop - skrócona wersja while loop - szybszy sposób warunków pętli
 
-while (age < 10){
+for (age = 5; age < 10; age++){
 
 console.log("Twój wiek to mniej niż 10 lat");
-age++;
-//dodanie age++ aby kod się nie zapętlił - będzie dodawac po 1 roku
-
 
 
 }
