@@ -1,4 +1,6 @@
-var myAge = 20;
+var myAge = 12;
+
+// || - oznacza ALBO, && = oznacza ORAZ(TAKŻE)
 
 if (myAge < 18 || myAge > 30 || myAge == 25){
 
