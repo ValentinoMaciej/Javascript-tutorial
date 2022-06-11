@@ -1,18 +1,7 @@
-var myAge = 8;
+var myAge = 25;
 
-if (myAge > 30){
-    document.write("Jesteś po 30tce !");
+if (myAge >= 18 && myAge <= 30){
 
-} else if (myAge > 20){
 
-    document.write("Jesteś po 20tce !");
-
-} else if (myAge > 10){
-
-    document.write("Jesteś po 10tce !");
-
-}    else{
-
-        document.write("Nie masz minimum 10 lat");
-
+    
 }
