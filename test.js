@@ -1,23 +1,21 @@
-/*numer w java uzywamy bez "", 
-gdyż jest to wtedy wyrażenie nieliczbowe a pisane 
-np. "5" + 5 da 55, ale 5 + 5 da 10 gdyż sa to 2 liczby*/
+/*
+NaN - czyli not a number np. a+b = apple+5 = NaN
+ale JS pomaga przy np. mnożeniu jak a*b = "7" * 5 = 35
+ale w dodawaniu i odejmowaniu już nie
+*/
 
-var a = "5";
+var a = "6"; //jeśli będzie "string" nie będzie to numerem
 var b = 5;
 
-console.log(a + b);
+// podwójne zaprzeczenie poprzez dodanie  !
+if (isNaN(a)){
 
-console.log(typeof (a + b) );
-/* wywołuje do konsoli typ jaki był użyty w tym przypadku
-"string" + liczba */
+    console.log("that is not a number");
 
-console.log(Math.round(7.5)); 
-console.log(Math.max(1,2,5,9,3));
-console.log(Math.PI);
 
-/* math.round zaokrągla w górę lub dół
-math.floor zaokrągla zawsze w dół
-math.ceil zaokrągla zaawsze w górę
-math.max wybiera najwyższą liczbę
-math.min wybiera najniższą liczbę 
-math.PI pokazuje liczbę PI */
+} else{
+
+console.log("senem życia jest " + (a * b));
+
+}
+
