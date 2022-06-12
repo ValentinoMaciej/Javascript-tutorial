@@ -1,18 +1,21 @@
 function getAverage (a,b,c,d,e){
 
-    var average = (a + b + c + d + e) / 2;
+    var average = (a + b + c + d + e) / 2; //lokalna funkcja
     console.log(average);
     return average;
 
 
 }
 
-var myResult = getAverage(7,12,23,9,3);
-console.log("The average is " + myResult)
+var myResult = getAverage(7,12,23,9,3); //globalna funkcja
 
 
-/* jeśli funkcja zawiera dane (a,b) wtedy funkcja musi być
-również wywołana z danymi w nawiasie inaczej będzie błąd,
-jeśli są 2 wartości to wywołujemy 2, inaczej sa ignorowane
-powyżej tej liczby*/
-//return wywołuje funkcję jak w przykładzie
+function logResult(){
+
+    console.log("The average is " + myResult + " inside the function");
+
+}
+
+logResult();
+
+//variable scope czyli zakres zmiennych
