@@ -1,21 +1,23 @@
-function getAverage (a,b,c,d,e){
+/*numer w java uzywamy bez "", 
+gdyż jest to wtedy wyrażenie nieliczbowe a pisane 
+np. "5" + 5 da 55, ale 5 + 5 da 10 gdyż sa to 2 liczby*/
 
-    var average = (a + b + c + d + e) / 2; //lokalna funkcja
-    console.log(average);
-    return average;
+var a = "5";
+var b = 5;
 
+console.log(a + b);
 
-}
+console.log(typeof (a + b) );
+/* wywołuje do konsoli typ jaki był użyty w tym przypadku
+"string" + liczba */
 
-var myResult = getAverage(7,12,23,9,3); //globalna funkcja
+console.log(Math.round(7.5)); 
+console.log(Math.max(1,2,5,9,3));
+console.log(Math.PI);
 
-
-function logResult(){
-
-    console.log("The average is " + myResult + " inside the function");
-
-}
-
-logResult();
-
-//variable scope czyli zakres zmiennych
+/* math.round zaokrągla w górę lub dół
+math.floor zaokrągla zawsze w dół
+math.ceil zaokrągla zaawsze w górę
+math.max wybiera najwyższą liczbę
+math.min wybiera najniższą liczbę 
+math.PI pokazuje liczbę PI */
