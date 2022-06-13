@@ -1,21 +1,31 @@
-/*
-NaN - czyli not a number np. a+b = apple+5 = NaN
-ale JS pomaga przy np. mnożeniu jak a*b = "7" * 5 = 35
-ale w dodawaniu i odejmowaniu już nie
+/* "" lub '' anulują się jeśli będziemy używali ich
+wewątrz siebie np. "I am a "fun" string", wtedy należy użyć
+ich naprzemiennie np. "I am a'fun' string", natomiast gdzy jest
+ich więcej wtedy przed znakiem dodajemy \ np.
+"I\'m a 'fun' string".
 */
 
-var a = "6"; //jeśli będzie "string" nie będzie to numerem
-var b = 5;
+var myString = "I\'m a 'fun' string";
 
-// podwójne zaprzeczenie poprzez dodanie  !
-if (isNaN(a)){
+console.log(myString);
 
-    console.log("that is not a number");
+console.log(myString.length);
+// sprawdza ilośc liter w stringu
 
+console.log(myString.toUpperCase());
+// zmienia litery na same wielkie
 
-} else{
+console.log(myString.toLowerCase());
+// zmienia litery na same małe
 
-console.log("senem życia jest " + (a * b));
+console.log(myString.indexOf("string"));
+// szuka od której litery w zdaniu zaczyna się wartość szukana
+// wartość -1 wyjdzie gdzy nie znajdzie takiego słowa
 
-}
+//porównanie strings
 
+var string1="abc";
+var string2="ABC";
+
+console.log(string1.toLowerCase() === string1.toLowerCase());
+//porównanie obydwóch wartości z własciwością z małymi literami
