@@ -1,27 +1,20 @@
 /*
-var str = "hello, world";
+myArray można okreslić np.
+myArray[0] = 1
+myArray[1] = "hello"
+myArray[2] = true
+myArray[3] = false
 
-str
-"hello, world"
-var str2 = str.slice(2,9);
-str2
-"llo, wo"
-oznacza, że od 2 do 9 miejsca wycinamy strings
+LUB
 
-var str3 = str.slice(2)
-str3
-"llo, world"
-oznacza, że od 2 miejsca do końca wycinamy strings
+myArray[1,"hello",true,false]
 
-var tags = "meat, ham, salami, pork, beef, chicken"
-tags
-"meat, ham, salami, pork, beef, chicken"
+i jest to to samo co zapisek wyżej
 
-var tagsArray = tags.split(",");
+można też posortować Array lub odwrócić czy sprawdzić długość np.
 
-tagsArray
-["meat", "ham", "salami", "pork", "beef", "chicken"]
+myArray.length - dlugosc czyli 4 pozycje
+myArray.sort - od najmniejszej do najwiekszej
+myArray.reverse - na odwrót
 
-oznacza, że wszelkie stringsy z zakresu zostały otagowane
-w cudzysłów - wszystko po przecinku
 */
