@@ -24,3 +24,4 @@ tagsArray
 
 oznacza, że wszelkie stringsy z zakresu zostały otagowane
 w cudzysłów - wszystko po przecinku
+*/
