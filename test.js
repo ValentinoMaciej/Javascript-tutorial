@@ -1,31 +1,26 @@
-/* "" lub '' anulują się jeśli będziemy używali ich
-wewątrz siebie np. "I am a "fun" string", wtedy należy użyć
-ich naprzemiennie np. "I am a'fun' string", natomiast gdzy jest
-ich więcej wtedy przed znakiem dodajemy \ np.
-"I\'m a 'fun' string".
-*/
+/*
+var str = "hello, world";
 
-var myString = "I\'m a 'fun' string";
+str
+"hello, world"
+var str2 = str.slice(2,9);
+str2
+"llo, wo"
+oznacza, że od 2 do 9 miejsca wycinamy strings
 
-console.log(myString);
+var str3 = str.slice(2)
+str3
+"llo, world"
+oznacza, że od 2 miejsca do końca wycinamy strings
 
-console.log(myString.length);
-// sprawdza ilośc liter w stringu
+var tags = "meat, ham, salami, pork, beef, chicken"
+tags
+"meat, ham, salami, pork, beef, chicken"
 
-console.log(myString.toUpperCase());
-// zmienia litery na same wielkie
+var tagsArray = tags.split(",");
 
-console.log(myString.toLowerCase());
-// zmienia litery na same małe
+tagsArray
+["meat", "ham", "salami", "pork", "beef", "chicken"]
 
-console.log(myString.indexOf("string"));
-// szuka od której litery w zdaniu zaczyna się wartość szukana
-// wartość -1 wyjdzie gdzy nie znajdzie takiego słowa
-
-//porównanie strings
-
-var string1="abc";
-var string2="ABC";
-
-console.log(string1.toLowerCase() === string1.toLowerCase());
-//porównanie obydwóch wartości z własciwością z małymi literami
+oznacza, że wszelkie stringsy z zakresu zostały otagowane
+w cudzysłów - wszystko po przecinku
