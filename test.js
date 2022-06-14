@@ -1,18 +1,31 @@
 /*
-zmiana atrybutów elementu który się chwyta
+zmiana stylu, dodanie wartości do stylu
 
-np.
-<a href="/Subjects" id="test" class="ciasto">Subject</a>
-zawiera 3 atrybuty i mozna je chwytac i zmieniać np.
+var title = document.getElementById("page-title");
+chwyciło element z "page-title" i wyświetliło
 
-var link = document.getElementById("test");
-chwyciło element z "test" i wyświetliło
+title.setAttrubite("style", "position: relative;");
+tutaj nastąpiła wpisanie stylu pozycja relatywna
 
-link.getAttribute("class");
-chwyciło atrybut class
 
-linkt.setAttribute("class", "pie");
-zmieniło atrybut class z "ciasto" na "pie"
+title.setAttribute("style", "left: 10px");
+tutaj nastąpiło zastąpienie wartości position relative
+
+
+aby dodać wartość nalezy dopisać kolejną wartość np.
+
+title.setAttribute("style", "position: relative; left: 10px");
+
+
+ale mozna inaczej jak:
+title.style.left = "20px";
+ustaliło to wartość na 20px w danym stylu
+
+title.style.backgroundColor = "blue";
+nastąpiła zmiana koloru tła
+w JS nie uzywamy myslnika tylo słowo po słowie
+czyli nie background-color
+a backgroundColor
 
 
 
