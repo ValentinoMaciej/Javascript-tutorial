@@ -1,21 +1,10 @@
 /*
-JS Events czyli wszystko co moze byc na stronie np. alert o kliknieciu,
-najazd na ikonke etc.
+JS Events z onclick na JS CSS i HTML
+w lekcji 40 the net ninja
 
-standardowo trzeba chwycic element jaki chcemy i następnie działamy
+tutor pokazywał jak nalezy stworzyć kod do 
+pokazywania zawartości boxa i zmniejszania
 
-var title = document.GetElementById("page-title");
-title.onclick = function(){
-    alert("kliknałes mnie");
-};
-pojawi się powiadomienie że kliknąłeś dany element
-
-title.onmouseover = function(){
-
-        alert("najechałeś na mnie kursorem");
-
-};
-pojawi się powiadomienie o najechaniu na chwycony element
-
+show more and show less etc.
 
 */
