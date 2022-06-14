@@ -1,35 +1,22 @@
 /*
-Dodawanie nowego elementu do DOM np. HTML
+Usuwanie elementu DOM
+musimy chwycić element jaki będziemy chcieli "wyczyścic"
+a następne nadać metodę usunięcia
 
-var newLi = document.createElement("li");
-tworzy to
-<li></li>
+var parent = document.getElementById("main-nav").getElementsByTagName("ul")[0];
+określiliśmy główny element w którym schodzimy dalej 
 
-var newA = document.createElement("a");
-tworzy to
-<a></a>
+var child = parent.getElementByTagName("li")[0];
+tutaj zaznaczyliśmy dziecko i chwyciliśmy 1szą pozycję LI
 
-chcemy je umieścić w konkretnym miejscu, czyli musimy chwycić element i go
-zaimplementować w danym miejscu
+parent.removeChild(child);
+usuneliśmy zaznaczoną pozycję
 
-var menu = document.getElementById("main-nav").getElementsByTagName("ul")[0];
-wyskoczy nam menu chwycone przez nas
+var removed = parent.removeChild(child);
+warto zastosować tą metodę aby usunięty element znajdował się 
+w "poczekalni" na wypadek gdybyśmy chcieli go uruchomić
+tak jak poniżej i wywołać komendą
 
-teraz dodajemy liste do menu
-menu.appendChild(newLi);
-
-dodaliśmy do menu nową listę
-
-teraz dodajemy <a> do Li
-newLi.appendChild(newA);
-appendChild czyli dodajemy nastepny element w postaci newA czyli <a> które mamy opisane wyżej
-<a></a>
-
-newA.innerHTML = "Blog";
-do danego newA dodany został string w postaci "Blog"
-
-menu.insertBefore(newLi, menu.getElementByTagName("li")[0]);
-czyli dodaliśmy element do pierwszego li wyliczonego z kodu w danej cześci kodu
-
+parent.appendChild(removed);
 
 */
