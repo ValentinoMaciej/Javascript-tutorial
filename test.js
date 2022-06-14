@@ -1,22 +1,21 @@
 /*
-Usuwanie elementu DOM
-musimy chwycić element jaki będziemy chcieli "wyczyścic"
-a następne nadać metodę usunięcia
+JS Events czyli wszystko co moze byc na stronie np. alert o kliknieciu,
+najazd na ikonke etc.
 
-var parent = document.getElementById("main-nav").getElementsByTagName("ul")[0];
-określiliśmy główny element w którym schodzimy dalej 
+standardowo trzeba chwycic element jaki chcemy i następnie działamy
 
-var child = parent.getElementByTagName("li")[0];
-tutaj zaznaczyliśmy dziecko i chwyciliśmy 1szą pozycję LI
+var title = document.GetElementById("page-title");
+title.onclick = function(){
+    alert("kliknałes mnie");
+};
+pojawi się powiadomienie że kliknąłeś dany element
 
-parent.removeChild(child);
-usuneliśmy zaznaczoną pozycję
+title.onmouseover = function(){
 
-var removed = parent.removeChild(child);
-warto zastosować tą metodę aby usunięty element znajdował się 
-w "poczekalni" na wypadek gdybyśmy chcieli go uruchomić
-tak jak poniżej i wywołać komendą
+        alert("najechałeś na mnie kursorem");
 
-parent.appendChild(removed);
+};
+pojawi się powiadomienie o najechaniu na chwycony element
+
 
 */
