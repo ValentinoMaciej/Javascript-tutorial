@@ -1,32 +1,35 @@
 /*
-zmiana stylu, dodanie wartości do stylu
+Dodawanie nowego elementu do DOM np. HTML
 
-var title = document.getElementById("page-title");
-chwyciło element z "page-title" i wyświetliło
+var newLi = document.createElement("li");
+tworzy to
+<li></li>
 
-title.setAttrubite("style", "position: relative;");
-tutaj nastąpiła wpisanie stylu pozycja relatywna
+var newA = document.createElement("a");
+tworzy to
+<a></a>
+
+chcemy je umieścić w konkretnym miejscu, czyli musimy chwycić element i go
+zaimplementować w danym miejscu
+
+var menu = document.getElementById("main-nav").getElementsByTagName("ul")[0];
+wyskoczy nam menu chwycone przez nas
+
+teraz dodajemy liste do menu
+menu.appendChild(newLi);
+
+dodaliśmy do menu nową listę
+
+teraz dodajemy <a> do Li
+newLi.appendChild(newA);
+appendChild czyli dodajemy nastepny element w postaci newA czyli <a> które mamy opisane wyżej
+<a></a>
+
+newA.innerHTML = "Blog";
+do danego newA dodany został string w postaci "Blog"
+
+menu.insertBefore(newLi, menu.getElementByTagName("li")[0]);
+czyli dodaliśmy element do pierwszego li wyliczonego z kodu w danej cześci kodu
 
 
-title.setAttribute("style", "left: 10px");
-tutaj nastąpiło zastąpienie wartości position relative
-
-
-aby dodać wartość nalezy dopisać kolejną wartość np.
-
-title.setAttribute("style", "position: relative; left: 10px");
-
-
-ale mozna inaczej jak:
-title.style.left = "20px";
-ustaliło to wartość na 20px w danym stylu
-
-title.style.backgroundColor = "blue";
-nastąpiła zmiana koloru tła
-w JS nie uzywamy myslnika tylo słowo po słowie
-czyli nie background-color
-a backgroundColor
-
-
-
-/*
+*/
