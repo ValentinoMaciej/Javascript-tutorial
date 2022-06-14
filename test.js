@@ -1,10 +1,8 @@
 /*
-JS Events z onclick na JS CSS i HTML
-w lekcji 40 the net ninja
+JS window.onload
 
-tutor pokazywał jak nalezy stworzyć kod do 
-pokazywania zawartości boxa i zmniejszania
-
-show more and show less etc.
+pozwala chwycić
+dany skrypt i wymusić na jego funkcjonowanie nawet w przypadku gdy 
+DOM w html zczyta kod w innej kolejności
 
 */
