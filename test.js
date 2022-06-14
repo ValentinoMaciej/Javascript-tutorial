@@ -1,26 +1,19 @@
 /*
-metoda innerHTML
-Grabbing elementów w JS w DOM czyli np. htmlu
-przykładowo
+zmiana atrybutów elementu który się chwyta
 
-var myBody = document.getElementsByTagName("body");
-myBody
-wyskoczy element jaki "chwycono"
-myBody[0].innerHTML; - od zera w JS liczymy
-jak zatwierdzimy to wykoczą wszystkie elementy BODY.
+np.
+<a href="/Subjects" id="test" class="ciasto">Subject</a>
+zawiera 3 atrybuty i mozna je chwytac i zmieniać np.
 
-myBody[0].innerHTML = "<p>Jestem paragrafem</p>";
+var link = document.getElementById("test");
+chwyciło element z "test" i wyświetliło
 
-cały BODY został zmieniony na <p> Jestem paragrafem
+link.getAttribute("class");
+chwyciło atrybut class
+
+linkt.setAttribute("class", "pie");
+zmieniło atrybut class z "ciasto" na "pie"
 
 
-text-content metodh
 
-var myTitle = document.getElementById("page-title");
-myTitle
-wyskoczy element z nazwa page-title który chwyciliśmy
-myTitle.textContent;
-wyskoczy co w nim jest zawarte
-
-myTitle.textContent = "Zmiana tytułu";
-nastąpi zmiana zawartości na powyższą wartość
+/*
