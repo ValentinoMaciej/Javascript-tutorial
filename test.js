@@ -1,27 +1,43 @@
-var Car = function(maxSpeed, driver){
+var myDate = new Date();
+console.log(myDate);
 
-this.maxSpeed = maxSpeed;
-this.driver = driver;
-this.drive = function(speed,time){
-    console.log(speed * time);
-};
-this.logDriver = function(){
-    console.log("driver name is " + this.driver);
+var myPastDate = new Date(1545, 11, 2, 10, 30, 45);
+var myFutureDate = new Date(2145, 0, 30, 10, 30, 45);
 
-};
+console.log(myPastDate);
+console.log(myFutureDate);
 
+var birthday = new Date (1985, 0, 15, 11, 15, 25);
+var birthday2 = new Date (1985, 0, 15, 11, 15, 25);
 
+//miesiące (od 0 do 11)
+console.log(birthday.getMonth());
+
+// rok
+console.log(birthday.getFullYear());
+
+// dzien miesiaca
+console.log(birthday.getDate());
+
+// dzien tygodnia
+console.log(birthday.getDay());
+
+//godzina daty podanej
+console.log(birthday.getHours());
+
+//podaje numery co do milisekundy od 1 stycznia 1970
+console.log(birthday.getTime());
+
+if(birthday.getTime() == birthday2.getTime()){
+
+    console.log("urodziny są równe");
+
+} else{
+
+    console.log("urodziny nie są równe");
 }
-
-var myCar = new Car(70, "Człowiek baton");
-var myCar2 = new Car(15, "Człowiek");
-var myCar3 = new Car(40, "Baton");
-var myCar4 = new Car(34, "Pies baton");
-
-myCar.drive(10,2);
-myCar3.logDriver();
-
-/* funkcja construction daje mozliwosc utworzenia
-jednej fukncji w ramach której mozemy dodawac
-zmienne bez koniecznosci tworzenia kolejnych
-takich samych lub podobnych funkcji w nieskonczonsc */
+/*
+porównanie np. urodzin, z wyznaczeniem w tezie
+, że birthday i birthday2 odnoszą się do konkretnej
+czynności w tym przypadku czasu
+*/
