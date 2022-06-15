@@ -1,8 +1,11 @@
 /*
-JS window.onload
+JS timer
+czyli ustalanie czasówki po jakiej np. ma się pojawić obiekt,
+ma być wywołana funkcja
 
-pozwala chwycić
-dany skrypt i wymusić na jego funkcjonowanie nawet w przypadku gdy 
-DOM w html zczyta kod w innej kolejności
+setTimeout(jaka funkcja, milisekundy do wyswietlenia);
 
+setInterval(jaka funkcja np. zmiana kolory, co ile)
+clearInterval - czyli zatrzymanie interwału poprzez np.
+fukncje onclick czyli kliknięcie na dany obiekt
 */
